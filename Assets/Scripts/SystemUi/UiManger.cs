@@ -7,10 +7,12 @@ namespace SystemUi
     public sealed class UiManger
     {
         private readonly Dictionary<Type, BaseView> _views;
+        private UiCanvasController _canvasController;
 
-        public UiManger()
+        public UiManger(UiCanvasController canvasController)
         {
             _views = new Dictionary<Type, BaseView>();
+            _canvasController = canvasController;
         }
 
         public void Add<TView>(TView tView)
@@ -25,6 +27,9 @@ namespace SystemUi
             if (_views.TryGetValue(typeof(TView), out BaseView component))
             {
                 component.Show();
+                _canvasController.Mask.transform.SetParent(component.transform.parent);
+                _canvasController.Mask.transform.SetSiblingIndex(0);
+                _canvasController.Mask.gameObject.SetActive(component.MaskOn);
             }
         }
 
@@ -34,6 +39,7 @@ namespace SystemUi
             if (_views.TryGetValue(typeof(TView), out BaseView component))
             {
                 component.Hide();
+                _canvasController.Mask.gameObject.SetActive(false);
             }
         }
     }

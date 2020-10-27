@@ -15,6 +15,7 @@ namespace SystemUi.Popups.Info
 
         private void Awake()
         {
+            MaskOn = true;
             ButtonOk = unit => { };
         }
 
