@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9fc7bcc8d524b489bbb0c8644a4cfa, type: 3}
+  m_Name: BulldozerUnitConfiguration
+  m_EditorClassIdentifier: 
+  _bulldozerUnitConfiguration:
+    _loadSpeed: 2
+    _prefab: {fileID: 1860957082, guid: 44e85b7d47d9a134db677665405e3734, type: 3}

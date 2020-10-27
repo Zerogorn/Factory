@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af01848f6182d9247b63ee4f8995a512, type: 3}
+  m_Name: UiObj
+  m_EditorClassIdentifier: 
+  _hudComponents:
+    _topHudView: {fileID: 4369607048131343041, guid: 962e9a2f319140e449ba20400fdc68d1, type: 3}
+    _bottomHudView: {fileID: -862137982224283662, guid: f3e4101e4b5f52b40940c17db518eca5, type: 3}
+  _popupsComponents:
+    _infoPopupView: {fileID: 2471658082515298450, guid: 1749b53188bea854e821d6c5852f498a, type: 3}
